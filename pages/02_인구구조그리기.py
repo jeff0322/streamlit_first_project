@@ -1,10 +1,12 @@
 import streamlit as st
 import pandas as pd
 import matplotlib.pyplot as plt
+import koreanize_matplotlib
 
 # 파일 업로더
 st.title("📊 우리 지역 인구 구조를 알아보자!")
-uploaded_file = st.file_uploader("CSV 파일을 업로드하세요", type="csv")
+data_path = 
+
 
 if uploaded_file is not None:
     # 데이터 읽기
