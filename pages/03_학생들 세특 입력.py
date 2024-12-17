@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 학생 목록
-students = ["학생1", "학생2", "학생3"]
+students = ["정민규", "한상은", "남궁비"]
 
 # 특기사항 세부 내용 (이모지 추가)
 remarks = {
