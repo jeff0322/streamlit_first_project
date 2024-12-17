@@ -27,8 +27,15 @@ selected_remarks = st.multiselect(
 # 결과 출력
 st.subheader("생성된 특기사항")
 if selected_remarks:
+    # 선택한 특기사항을 한 줄로 합침
+    combined_remarks = " ".join(remarks[item] for item in selected_remarks)
+    
+    # 글자 수 계산
+    char_count = len(combined_remarks)
+    
+    # 출력
     st.write(f"**{selected_student}**에 대한 특기사항:")
-    for item in selected_remarks:
-        st.write(f"- {remarks[item]}")
+    st.write(combined_remarks)
+    st.write(f"총 글자 수: {char_count}자")
 else:
     st.write("특기사항 항목을 선택해주세요.")
